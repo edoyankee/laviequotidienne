@@ -1,0 +1,276 @@
+<html>
+    
+    
+    <head>
+        
+        <script src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script src="path/to/custom-script.js"></script>
+        
+        <style type="text/css">
+        
+            #menu {width: 100%; height: 50px; background-color:#FFFEFA; position: fixed}
+            #menu ul{margin:0px; padding-top: 20px; background-color:#FFFEFA}
+            #menu li{display: inline;}
+            #menu li:hover {cursor: pointer;} 
+                
+            #logo{ width: 50px; height 35px; margin: 0px; border: 0px; vertical-align: middle; 
+                
+            }
+            
+            #logo:hover{ cursor: pointer;}
+            
+            #mabout{position: relative; left: 310px; font-size: 30px; margin: 0px; border: 0px; font-family: impact;
+                
+            }
+            
+            #mcontact{position: relative; left: 360px; font-size: 30px; margin: 0px; border: 0px; font-family: impact; }
+            
+            #mshop{position: relative; left: 420px; font-size: 30px; font-family: impact;
+            }
+            
+            #mlvq{ color: #e60000; font-family: impact; font-size: 30px; position: relative; left: 480px;
+                
+            }
+            
+            body{ margin: 0px; padding: 0px; background-color: #FFFEFA
+            }
+            
+            .sections{ width: 100%; margin: 0px;
+                
+            }
+            
+            #section1{background-color:; height: 80px;
+                
+            }
+            
+            #section2{background-color:#FFFEFA; height: 710px; font-size: 100px;
+            
+            }
+            
+            
+            .container{display: flex;
+                
+            }
+            
+            #lvq:hover {cursor: pointer;
+                
+            }
+            
+            #lvq{ padding-top: 200px; margin: 0px; color: #e60000; font-family: impact; text-align: left; padding-left: 190px
+                
+            }
+            
+            #fotomagazine{position: relative; left: 483px; top: 20px; margin: 0px; height: 650px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                
+            }
+            
+            #section3{ background-color:#FFFEFA; height: 800px;}
+            
+            #magazinedescription{ font-size: 25px; padding-top: 70px; padding-left: 100px; padding-right: 400px; margin: 0px; text-align: left; font-family: baskerville; width: 800px;
+                
+            }
+            
+            #divslideshow{ height: 400px; width: 100%;}
+            
+            .slidershow{ width: 500px; height: 300px; overflow: hidden; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+            }
+            
+            .middle{position: relative; top: 120px; left: 1100px;  transform: translate(-50%, -50%)
+                
+            }
+            
+            .navigation{ position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex;
+                
+            }
+            
+            .bar{ width: 50px; height: 10px; border: 2px solid #fff; margin: 6px; cursor: pointer;
+                
+            }
+            
+            input[name="r"]{ position: absolute;visibility: hidden; transition: 0.4s; 
+            }
+            
+            .slides{width: 500%; height: 100%; display: flex;
+                
+            }
+            
+            .slide{width: 20%;
+                transition: 0.6s;
+                
+            }
+            
+            .slide img{width: 500px; height: 300px;
+                
+            }
+            
+            #r1:checked ~ .s1{margin-left: 0;}
+            #r2:checked ~ .s1{margin-left: -20%;}
+             #r3:checked ~ .s1{margin-left: -40%;}
+             #r4:checked ~ .s1{margin-left: -60%;}
+             #r5:checked ~ .s1{margin-left: -80%;}
+             
+            
+            .bar:hover{ background: #fff;
+                
+            }
+            
+            #section4{height: 1150px; width: 100%; background-color:#FFFEFA;
+                
+            }
+            
+            h1{ text-align: center; position: relative; top: 60px; font-family: impact; font-size: 40px; color: #e60000}
+            
+            #tabout{ position: relative; left: -578px; font-family: baskerville; font-size: 28px; color: black;
+                
+            }    
+            
+            #pabout{font-size: 25px; padding-top: 70px; padding-left: 100px; padding-right: 400px; margin: 0px; text-align: left; font-family: baskerville; width: 800px;}
+            
+            #pcontact{ text-align: left; margin-left: 20px; font-size: 25px; position: absolute; top: 2550px; left: 80px; font-family: baskerville;}
+            
+            #shop{height: 750px; width: 100%; background-color: #FFFEFA;
+                
+            }
+            
+            #h1shop{ position: relative; left: -584px; font-family: baskerville; font-size: 28px; color: black;
+                
+            }
+            
+            
+
+        </style>
+        
+       
+    </head>
+    
+    
+    <body>
+    <div id="menu" class="flex"> 
+        
+                <ul>
+                    
+                  <img onclick="document.getElementById('section1').scrollIntoView()" src="logo%20magazine.png" id="logo">
+                  <li onclick="document.getElementById('section4').scrollIntoView()" class="menu1" id="mabout">About</li>
+                  <li onclick="document.getElementById('section4').scrollIntoView()" id="mcontact">Contact</li>
+                  <li onclick="document.getElementById('shop').scrollIntoView()" class="menu2" id="mshop">Shop</li>
+                  <li  id="mlvq" onclick="document.getElementById('section3').scrollIntoView({ behavior: 'smooth' });"> LA VIE QUOTIDIENNE</li>
+                </ul>
+                  
+        </div>
+        
+             <div id="section1" class="sections flex">
+                
+                <div class="sections_indoor"> 
+        
+        
+        
+        
+        </div>
+        </div>         
+                              <div id="section2" class="sections flex">
+                
+                <div class="sections_indoor" style="height: 700px"> 
+                    <div class="container" style="height: 700px">
+                    <img id="fotomagazine" src="logo%20magazine.png">
+                    </div>
+
+        </div>
+        
+        </div>
+        
+        <div id="section3" class="sections flex">
+             
+             <div class="sections_indoor">
+                 
+                 <p id="magazinedescription"><b>Volume 01</b><br>
+                     <br>
+Volume 01 is the first project, a young and playful concept where we tried to play with the pages and the images. We want to express different thoughts, feelings and parts of life through photography. In my last year I always took my old analogue and digital camera and tried to photograph every part of my life, to be able to really feel the images even months and years later. It's ironic because many people criticise this and think that pictures can't make you feel the exact emotions of reality, but for us this type of photography has this strong potential to give people new emotions that they didn't feel in that real moment before.
+Maccio and Aliseo, two friends of mine, are featured in the first volume and have had the opportunity to express their ideas, their social background and even their lives through modern art and photography. Inside the first volume you will find two interviews to understand more and more their pov and creative background.
+We're very pleased to be able to show you our first volume, and hope you'll enjoy it. <br>
+                     <br>
+                     Moritz & Scott</p>
+            </div>
+        
+                 
+    
+                 <div class="slidershow middle"> 
+                     <div class="slides">
+                         <input type="radio" name="r" id="r1" checked>
+                          <input type="radio" name="r" id="r2">
+                          <input type="radio" name="r" id="r3">
+                          <input type="radio" name="r" id="r4">
+                          <input type="radio" name="r" id="r5">
+                    
+                         
+                         <div class="slide s1">
+                             <img src="pagina%201.png" width: 500px; height: 300px;>
+                         </div>
+                                                      <div class="slide">
+                             <img src="pagina%202.png" width: 500px; height: 300px;>
+                         </div>
+                        <div class="slide">
+                             <img src="pagina%203.png" width: 500px; height: 300px;>  
+                         </div>
+                        <div class="slide">
+                        <img src="pagina%204.png" width: 500px; height: 300px;>                            </div>
+                                                       <div class="slide">
+                             <img src="pagina%205.png" width: 500px; height: 300px;>      
+                         </div>
+                                                      <div class="slide">
+                             <img src="pagina%206.png" width: 500px; height: 300px;>
+                         </div>
+                         
+                     </div>
+                 <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                     <label for="r2" class="bar"></label>
+                     <label for="r3" class="bar"></label>
+                     <label for="r4" class="bar"></label>
+                     <label for="r5" class="bar"></label>
+                 </div>
+                     </div> 
+            
+            </div>
+        
+        <div id="section4" class="section flex">
+            <div class="sections_indoor">
+                
+                <h1 id="tabout">About</h1>
+        <p id="pabout">
+"Why note make a magazine?", it all started with this message from a friend of mine in November 2022. It has always been my dream to do something creative where I have the opportunity to express something I really want and even more something I really feel. I have always been interested in photography and videography, but I never really had the opportunity to do what I wanted, but then somehow about 3 years ago my mum gave me her old Nikon from the 80's and I immediately felt that this was finally the perfect camera for my lifestyle and my idea of pictures. Then I started taking different pictures, playing with the camera and my ideas, but it was during my time in Paris that I finally found my style of photography and really understood what I wanted to shoot.<br>
+            <br>
+I want to photograph my daily life, my "vie quotidienne" in French, while focusing on different themes: fashion, art and social reality.<br>
+It's quite a contrast when I look at the fashion industry and the reality of what you really see on the street sometimes, but it reflects my everyday life and that's why I want to express it.<br>
+            <br>
+What about Scott? I met Scott in Paris a few months ago and we immediately connected and saw that our mindset, our ideas and our creative will were very similar. Often in situations where you meet new people you say "yeah lets meet again" and you never do it again, but after moving back to Hamburg I met him on my first night and we understood that it was a real promise back in Paris. We talked a lot about this project, about his future projects and I found it extremely valuable how he talked about my whole project in front of other people, that was the moment I understood that this duo could create a lot of good things together.</p>
+        
+                <p id="pcontact"><b>Contact us:</b><br>
+                    <br>
+E-Mail: <a href="mailto:laviequotidienne23@gmail.com">laviequotidienne23@gmail.com</a><br>
+                    <br>
+And more on our Instagram account <a href="https://www.instagram.com/laviequotidienne.magazine/">@laviequotidienne.magazine</a></p>
+        
+        </div>
+        </div>   
+            
+        <div id="shop" class="section flex">
+            <div class="section_indoor">
+                <h1 id="h1shop">Shop</h1>
+            
+            
+            
+            
+            
+            </div>
+        
+        
+        
+        </div>
+    </body>
+
+
+
+
+
+
+</html>
